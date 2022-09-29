@@ -1,9 +1,9 @@
-import Navigation from "../components/navigation/Navigation"
+import NavBar from "../components/navigation/NavBar"
 
 const Homepage = () =>{
     return(
         <>
-            <Navigation />
+            <NavBar />
         </>
         
     );

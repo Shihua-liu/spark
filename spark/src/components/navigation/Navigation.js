@@ -1,26 +1,12 @@
-import "./Navigation"
+import NavLinks from "./NavLinks"
 
+import "./Navigation.css"
 const Navigation = () => {
     return(
-        <nav class="Navigation">
-            <ul>
-                <li>
-                    <a href="">over</a>
-                </li>
-                <li>
-                    <a href="">features</a>
-                </li>
-                <li>
-                    <a href="">prijs</a>
-                </li>
-                <li>
-                    <a href="">contact</a> 
-                </li>
-                <li>
-                    <a href="">login</a>
-                </li>
-            </ul>
+        <nav className="Navigation">
+            <NavLinks />
         </nav>
+        
     );
 }
 
