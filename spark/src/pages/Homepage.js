@@ -12,10 +12,10 @@ const Homepage = () =>{
             <Checks />
             <BigPicture />
             <AboutPart />
-            <Section BigTitleSection="Tips">
-                <Cards text="hahah"/>
-                <Cards text="hahah"/>
-                <Cards text="hahah"/>
+            <Section BigTitleSection="Featuring">
+                <Cards head="Feature" text="hahah"/>
+                <Cards head="Feature" text="hahah"/>
+                <Cards head="Feature" text="hahah"/>
             </Section>
             
         </>

@@ -1,4 +1,4 @@
-import "./Cards.js"
+import "./Cards.css"
 
 const Cards = (props) => {
     let cardImage = <img src={"/images/" + props.image} alt=""/>
@@ -9,9 +9,13 @@ const Cards = (props) => {
 
     return(
         <article className="card">
+            
             <figure className="card__figure">
                 {cardImage}
             </figure>
+            <h2 className="card__head">
+                {props.head || "Feature text"}
+            </h2>
             <section className="card__div">
                 <p>{props.text || "dummy text"}</p>
             </section>
