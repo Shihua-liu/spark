@@ -1,0 +1,35 @@
+.checks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5vh;
+    color: black;
+    list-style: none;
+    font-size: 2rem;
+}
+
+.checks span{
+    display: flex;
+    flex-direction: row;
+}
+
+.checks__icons{
+    margin: 1rem;
+}
+
+.checks__items{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:990px){
+
+   .checks{
+        height: 20vh;
+        display: flex;
+        justify-content: end;
+   }
+}

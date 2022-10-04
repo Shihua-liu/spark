@@ -1,0 +1,35 @@
+.bigPicture{
+    background: rgba(0,0,0,0.4) url("../../../public/images/rings-background-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 10rem;
+    font-size: 300%;
+    color: #DFF6FF;
+}
+
+.bigPicture__btn{
+    border: #DFF6FF 0.3rem solid;
+    border-radius: 1rem;
+    color: #DFF6FF;
+    background: none;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    margin: 2rem 0rem;
+    font-size: 120%;
+}
+
+.bigPicture__btn:hover{
+    transform: scale(1.1);
+    color: hsl(0, 0%, 73%);
+    border: hsl(0, 0%, 73%) 0.3rem solid;
+    transition: ease-in-out;
+}
+@media screen and (max-width:1200px){
+    .bigPicture{
+        background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}

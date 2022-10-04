@@ -5,10 +5,31 @@
 }
 
 html{
-    
+    scroll-behavior: smooth;
     font-size: 62.5%;
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato';
+    background-color: #DFF6FF;
+}
+
+::-webkit-scrollbar {
+    display: none;
+
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: none; 
+
+  }
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: none; 
+
+  }
+
+element::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
 }
