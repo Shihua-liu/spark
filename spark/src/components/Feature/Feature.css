@@ -1,0 +1,19 @@
+.feature{
+    margin: 2rem;
+    text-align: center;
+}
+
+.feature__figure{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature__figure img{
+    height: 50%;
+    object-fit: contain;
+    border-radius: 50%;
+    
+}

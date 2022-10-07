@@ -14,10 +14,13 @@ const Cards = (props) => {
                 {cardImage}
             </figure>
             <h2 className="card__head">
-                {props.head || "Feature text"}
+                {props.head || "naam sieraad"}
             </h2>
             <section className="card__div">
                 <p>{props.text || "dummy text"}</p>
+            </section>
+            <section>
+                <p>{props.prijs || "prijs"}</p>
             </section>
         </article>
     );
