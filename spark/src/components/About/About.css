@@ -5,12 +5,12 @@
     flex-direction: row;
     padding: 6rem 3rem;
     gap: 5rem;
-    
+    background-color: #f2eeeb;
 }
 
 .about__header{
     width: 50%;
-    font-size: 200%;
+    font-size: 250%;
     padding: 2rem;
     display: flex;
     flex-direction: column;

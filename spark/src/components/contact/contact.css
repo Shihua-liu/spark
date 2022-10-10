@@ -1,0 +1,60 @@
+.contact{
+    min-height: 50vh;
+    font-size: 250%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact__head{
+    margin: 2rem;
+}
+
+.contact__sections{
+    margin: 2rem;
+}
+
+.contact__section--name{
+    margin: 0.5rem;
+}
+
+.contact__section--input{
+    height: 4rem;
+    width: calc((75vw - 6rem)/ 2);
+    border-radius: 2.5rem;
+    padding: 0.5rem;
+}
+
+.contact__section--textarea{
+    height: 40rem;
+    width: calc((75vw - 6rem)/ 2);
+    border-radius: 2.5rem;
+    padding: 0.5rem;
+}
+
+.contact__btn{
+    background-color: #ff5c28;
+    border: #ff5c28 0.3rem solid;
+    border-radius: 5rem;
+    color: #eee;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    margin: 2rem 0rem;
+    font-size: 120%;
+}
+
+
+@media screen and (max-width:120rem) {
+    .contact__section--input{
+        height: 4rem;
+        width: calc((50vw - 6rem)/ 2);
+        padding: 0.7rem;
+    }
+    .contact__section--textarea{
+        height: 20rem;
+        width: calc((50vw - 6rem)/ 2);
+        resize: none;
+        padding: 2rem 1rem;
+    }
+}

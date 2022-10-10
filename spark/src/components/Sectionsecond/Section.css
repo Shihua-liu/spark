@@ -1,0 +1,21 @@
+.section{
+    min-height: 80vh;
+    font-size: 200%;
+    background: white;
+}
+
+.section__header{
+    padding: 4rem; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 4rem;
+    gap: 2rem;
+}
+
+.section__wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}

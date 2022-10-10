@@ -1,10 +1,11 @@
-.section{
-    margin: 4rem;
+.sectionfirst{
     min-height: 80vh;
     font-size: 200%;
+    background: #fff4f2;
 }
 
-.section__header{
+
+.sectionfirst__header{
     padding: 4rem; 
     display: flex;
     justify-content: center; 
@@ -13,7 +14,7 @@
     gap: 2rem;
 }
 
-.section__wrapper{
+.sectionfirst__wrapper{
     display: flex;
     justify-content: center;
     gap: 2rem;

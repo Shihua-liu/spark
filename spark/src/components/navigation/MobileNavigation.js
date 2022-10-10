@@ -11,10 +11,10 @@ const MobileNavigation = () =>{
 
     const [open, setOpen] = useState(false);
 
-    const hamburgericon = <GiHamburgerMenu className={Hamburger} size="4rem" color="#4C6793"
+    const hamburgericon = <GiHamburgerMenu className={Hamburger} size="4rem" color="#48001e"
     onClick={() => setOpen(!open)}/>
 
-    const closeicon = <AiOutlineCloseCircle className={Hamburger} size="4rem" color="#DFF6FF"
+    const closeicon = <AiOutlineCloseCircle className={Hamburger} size="4rem" color="#48001e"
     onClick={() => setOpen(!open)}/>
     
     return(

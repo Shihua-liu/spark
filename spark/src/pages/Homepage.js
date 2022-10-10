@@ -3,9 +3,11 @@ import Checks from "../components/Checks/Checks";
 import BigPicture from "../components/bigPicture/bigPicture";
 import AboutPart from "../components/About/About"
 import Feature from "../components/Feature/Feature"
-import Section from "../components/Section/Section"
+import Sectionfirst from "../components/Sectionfirst/Section"
+import Sectionsecond from "../components/Sectionsecond/Section"
 import Cards from "../components/Cards/Cards"
 import Contact from "../components/contact/contact"
+import Footer from "../components/Footer/Footer";
 
 const Homepage = () => {
     return (
@@ -14,21 +16,16 @@ const Homepage = () => {
             <Checks />
             <BigPicture />
             <AboutPart />
-            <Section BigTitleSection="Features">
+            <Sectionfirst BigTitleSection="Features">
                 <Feature />
-                <Feature />
-                <Feature />
-                <Feature />
-                <Feature />
-                <Feature />
-                <Feature />
-            </Section>
-            <Section BigTitleSection="Prices">
+            </Sectionfirst>
+            <Sectionsecond BigTitleSection="Prices">
                 <Cards head="prijs" text="hahah" prijs="29,95" />
                 <Cards head="prijs" text="hahah" prijs="29,95" />
                 <Cards head="prijs" text="hahah" prijs="29,95" />
-            </Section>
+            </Sectionsecond>
             <Contact head="Contact"/>
+            <Footer />
         </>
 
     );

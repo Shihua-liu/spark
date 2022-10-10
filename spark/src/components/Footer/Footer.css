@@ -1,0 +1,11 @@
+footer{
+    background: blue;
+    height: 50vh;
+    font-size: 120%;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
