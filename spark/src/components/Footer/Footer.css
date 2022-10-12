@@ -1,11 +1,41 @@
-footer{
-    background: blue;
-    height: 50vh;
-    font-size: 120%;
+.Footer {
 
+    background: #eee;
+    min-height: 20vh;
+    font-size: 150%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 6rem 2rem;
+    flex-wrap: wrap;
 }
 
-a{
+.Footer__ul{
+    width: 1fr 1fr 1fr;
+    margin: 1rem;
+}
+
+.Footer__h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: gray;
+}
+
+.Footer__list--nav {
+    list-style: none;
+    margin: 1rem 0rem;
+}
+
+.Footer__list--links {
     text-decoration: none;
-    color: white;
+    color: #000;
+}
+
+@media screen and(max-width:600px) {
+    .Footer {
+        display: flex !important; 
+        padding: 6rem 2rem;
+
+    }
 }

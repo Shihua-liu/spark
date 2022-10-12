@@ -1,0 +1,83 @@
+.card{
+    width: 30rem;
+    height: 60rem;
+    border-radius: 2.5rem;
+    background: #fff4f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin: 3rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.card__section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card__section--cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.card__div{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.card__tekst{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+.card__text--span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card__button{
+    background-color: #ff5c28;
+    border: #ff5c28 0.3rem solid;
+    border-radius: 5rem;
+    color: #eee;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    margin: 2rem 0rem;
+    font-size: 120%;
+    display: flex;
+    justify-content: end;
+}
+
+.card__button:hover{
+    transform: scale(1.05);
+    color: hsl(0, 0%, 73%);
+    border: hsl(0, 0%, 73%) 0.3rem solid;
+    transition: ease-in-out;
+}
+
+@media screen and (max-width:62.5rem) {
+    .card__text--span{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}

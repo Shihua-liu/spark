@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 5vh;
+    min-height: 5vh;
     color: #48001e;
     background: #ffeae6;
     list-style: none;
@@ -13,6 +13,7 @@
 .checks span{
     display: flex;
     flex-direction: row;
+    margin: 1rem;
 }
 
 .checks__icons{
@@ -31,5 +32,6 @@
    .checks{
         display: flex;
         justify-content: space-around;
+        flex-direction: column;
    }
 }

@@ -1,25 +1,27 @@
-import "./Footer.css"
+import "../Footer.css"
 
-const FooterLinks = () => {
+const FooterNav = () => {
     return (
-        <ul className="Footer">
+        <ul className="Footer__ul">
             {/* <i className="fa-solid fa-gem"></i> */}
-            <li className="Footer__list">
+            <h3 className="Footer__h3">navigatie</h3>
+            <li className="Footer__list--nav">
                 <a className="Footer__list--links" href="">over</a>
             </li>
-            <li className="Footer__list">
+            <li className="Footer__list--nav">
                 <a className="Footer__list--links" href="">features</a>
             </li>
-            <li className="Footer__list">
+            <li className="Footer__list--nav">
                 <a className="Footer__list--links" href="">prijs</a>
             </li>
-            <li className="Footer__list">
+            <li className="Footer__list--nav">
                 <a className="Footer__list--links" href="">contact</a>
             </li>
-            <li className="Footer__list">
+            <li className="Footer__list--nav">
                 <a className="Footer__list--links" href="">login</a>
             </li>
-        </ul>);
+        </ul>
+    );
 }
 
-export default FooterLinks;
+export default FooterNav;

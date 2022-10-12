@@ -1,0 +1,40 @@
+.section{
+    min-height: 80vh;
+    font-size: 200%;
+    background: #ffeae6;
+    position: relative;
+}
+
+.section__header{
+    padding: 4rem; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 4rem;
+    gap: 2rem;
+}
+
+
+.section__wrapper{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:62.5rem) {
+    .card__text--span{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .section__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+}

@@ -5,6 +5,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: #ffccc2;
+    z-index: 99;
 }
 
 .contact__head{
@@ -24,6 +26,7 @@
     width: calc((75vw - 6rem)/ 2);
     border-radius: 2.5rem;
     padding: 0.5rem;
+    border: 0.1rem black solid;
 }
 
 .contact__section--textarea{
@@ -31,6 +34,7 @@
     width: calc((75vw - 6rem)/ 2);
     border-radius: 2.5rem;
     padding: 0.5rem;
+    border: 0.1rem black solid;
 }
 
 .contact__btn{
@@ -48,12 +52,12 @@
 @media screen and (max-width:120rem) {
     .contact__section--input{
         height: 4rem;
-        width: calc((50vw - 6rem)/ 2);
+        width: calc((80vw - 6rem)/ 2);
         padding: 0.7rem;
     }
     .contact__section--textarea{
         height: 20rem;
-        width: calc((50vw - 6rem)/ 2);
+        width: calc((100vw - 6rem)/ 2);
         resize: none;
         padding: 2rem 1rem;
     }

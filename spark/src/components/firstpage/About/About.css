@@ -1,11 +1,11 @@
 .about{
-    min-height: 100vh;
+    min-height: 75vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     padding: 6rem 3rem;
     gap: 5rem;
-    background-color: #f2eeeb;
+    background-color: #ffeae6;
 }
 
 .about__header{
@@ -26,7 +26,6 @@
 
 @media screen and (max-width:1200px){
     .about{
-        height: 100vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -34,6 +33,7 @@
     }
     .about__header{
         width: 100%;
+        height: 100%;
         font-size: 200%;
         padding: 2rem;
     }
@@ -41,7 +41,7 @@
     
     .about img{
         width: 100%;
-        height: 100%;
+        height: 80%;
         padding: 3rem 0rem 0rem 0rem;
     }
 }
