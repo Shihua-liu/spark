@@ -25,6 +25,7 @@
 .Footer__list--nav {
     list-style: none;
     margin: 1rem 0rem;
+    font-size: 105%;
 }
 
 .Footer__list--links {
@@ -32,6 +33,9 @@
     color: #000;
 }
 
+.Footer__list--links:hover {
+    color:#ff5c28;
+}
 @media screen and(max-width:600px) {
     .Footer {
         display: flex !important; 

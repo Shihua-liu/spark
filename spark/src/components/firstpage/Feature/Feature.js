@@ -1,27 +1,47 @@
 
 import "./Feature.css"
+import { TbTruckReturn } from "react-icons/tb"
 
-const Feature = (props) => {
-
-    let cardImage = <img src={"/images/" + props.image} alt=""/>
-
-    if(props.image === undefined){
-        cardImage = <img src={"/images/diamonds2.jpg"} alt=""/>;
-    }
+const Feature = () => {
 
     return (
-        <section className="feature">
-            <figure className="feature__figure">
-                {cardImage}
-            </figure>
-            <h2 className="feature__head">
-                {props.head || "naam sieraad"}
-            </h2>
-            <section className="feature__div">
-                <p>{props.text || "dummy text"}</p>
+        <div className="feature__maindiv">
+            <section className="feature">
+                <figure className="feature__figure">
+                    <TbTruckReturn />
+                </figure>
+                <h2 className="feature__head">
+                    Cash Back
+                </h2>
+                <section className="feature__div">
+                    <p>Niet blij? <br></br>krijg je geld terug</p>
+                </section>
             </section>
-        </section>
+            <section className="feature">
+                <figure className="feature__figure">
+                    <TbTruckReturn />
+                </figure>
+                <h2 className="feature__head">
+                    Support
+                </h2>
+                <section className="feature__div">
+                    <p>Hulp nodig? <br></br>Neem contact op <br /> met onze 24/7 service</p>
+                </section>
+            </section>
+            <section className="feature">
+                <figure className="feature__figure">
+                    <TbTruckReturn />
+                </figure>
+                <h2 className="feature__head">
+                    Cash Back
+                </h2>
+                <section className="feature__div">
+                    <p>Niet blij? krijg je geld terug</p>
+                </section>
+            </section>
+        </div>
+
     );
 }
- 
+
 export default Feature;

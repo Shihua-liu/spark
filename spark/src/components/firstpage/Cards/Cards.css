@@ -62,7 +62,7 @@
     cursor: pointer;
     padding: 0.5rem 2rem;
     margin: 2rem 0rem;
-    font-size: 120%;
+    font-size: 100%;
     display: flex;
     justify-content: end;
 }

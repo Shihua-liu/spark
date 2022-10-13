@@ -4,21 +4,21 @@ const FooterNav = () => {
     return (
         <ul className="Footer__ul">
             {/* <i className="fa-solid fa-gem"></i> */}
-            <h3 className="Footer__h3">navigatie</h3>
+            <h3 className="Footer__h3">Navigatie</h3>
             <li className="Footer__list--nav">
-                <a className="Footer__list--links" href="">over</a>
+                <a className="Footer__list--links" href="">Over</a>
             </li>
             <li className="Footer__list--nav">
-                <a className="Footer__list--links" href="">features</a>
+                <a className="Footer__list--links" href="">Features</a>
             </li>
             <li className="Footer__list--nav">
-                <a className="Footer__list--links" href="">prijs</a>
+                <a className="Footer__list--links" href="">Prijs</a>
             </li>
             <li className="Footer__list--nav">
-                <a className="Footer__list--links" href="">contact</a>
+                <a className="Footer__list--links" href="">Contact</a>
             </li>
             <li className="Footer__list--nav">
-                <a className="Footer__list--links" href="">login</a>
+                <a className="Footer__list--links" href="">Login</a>
             </li>
         </ul>
     );
