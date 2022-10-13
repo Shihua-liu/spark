@@ -5,6 +5,7 @@ const Navigation = () => {
     return(
         <nav className="Navigation">
             <NavLinks />
+            
         </nav>
         
     );

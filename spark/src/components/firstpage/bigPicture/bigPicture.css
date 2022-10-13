@@ -63,7 +63,10 @@
         width: 100%;
         height: 100%;
         margin-top: 2rem;
-    
+    font-size: 100%;
+    }
+    .landing__head{
+        font-size: 150%;
     }
     .bigPicture{
         width: 100%;

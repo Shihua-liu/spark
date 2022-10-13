@@ -7,7 +7,7 @@ import "./Navigation.css"
 import {AiOutlineCloseCircle} from "react-icons/ai"
 import {GiHamburgerMenu} from "react-icons/gi"
 
-const Dogshit = () =>{
+const MobileNavigation = () =>{
 
     const [open, setOpen] = useState(false);
 
@@ -21,10 +21,10 @@ const Dogshit = () =>{
         <nav className="MobileNavigation">
             {open ? closeicon : hamburgericon}
             {open && <NavLinks />}
-            
+        
         </nav>
         
     )
 }
 
-export default Dogshit
+export default MobileNavigation
