@@ -1,7 +1,6 @@
 .landing{
     min-height: 100vh;
     padding: 5rem;
-    font-size: 300%;
     color: #48001e;
     display: flex;
     flex-direction: row;
@@ -11,9 +10,14 @@
     gap: 5rem;
 }
 
+.landing__head{
+    font-size: 200%;
+}
+
 .landing__text{
     width: 30%;
     height: 100%;
+    font-size: 200%;
 }
 
 .landing__btn{
