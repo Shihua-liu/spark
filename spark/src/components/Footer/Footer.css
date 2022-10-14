@@ -43,3 +43,11 @@
 
     }
 }
+
+@media screen and (max-width:25rem) {
+    .Footer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

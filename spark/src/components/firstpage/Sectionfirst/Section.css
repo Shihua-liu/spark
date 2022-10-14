@@ -16,10 +16,10 @@
 }
 
 .sectionfirst__wrapper{
-    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
     flex-wrap: wrap;
 }

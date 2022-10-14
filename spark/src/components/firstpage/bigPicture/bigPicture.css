@@ -29,13 +29,14 @@
     padding: 0.5rem 2rem;
     margin: 2rem 0rem;
     font-size: 120%;
+    transition: 0.75s ease-in-out;
 }
 
 .landing__btn:hover{
     transform: scale(1.1);
     color: hsl(0, 0%, 73%);
     border: hsl(0, 0%, 73%) 0.3rem solid;
-    transition: ease-in-out;
+    
 }
 
 .bigPicture{
@@ -74,7 +75,7 @@
         height: 100%;
     }
     .landing__btn{
-        width: 50%;
+        width: 33%;
     }
     
 }

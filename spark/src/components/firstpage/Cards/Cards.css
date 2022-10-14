@@ -1,5 +1,5 @@
 .card{
-    width: 30rem;
+    min-width: 20rem;
     height: 60rem;
     border-radius: 2.5rem;
     background: #fff4f2;
@@ -65,19 +65,36 @@
     font-size: 100%;
     display: flex;
     justify-content: end;
+    transition: 0.75s ease-in-out;
 }
 
 .card__button:hover{
     transform: scale(1.05);
     color: hsl(0, 0%, 73%);
     border: hsl(0, 0%, 73%) 0.3rem solid;
-    transition: ease-in-out;
+    
 }
 
 @media screen and (max-width:62.5rem) {
     .card__text--span{
         display: flex;
         flex-direction: row;
+        align-items: center;
+    }
+
+    .card__tekst{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+@media screen and (max-width:25rem) {
+    .card__text--span{
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 }

@@ -4,7 +4,7 @@ const FooterSocial = () => {
     return ( 
         <ul className="Footer__ul">
             {/* <i className="fa-solid fa-gem"></i> */}
-            <h3 className="Footer__h3">Volg Storytel</h3>
+            <h3 className="Footer__h3">Volg Spark</h3>
             <li className="Footer__list--nav">
                 <a className="Footer__list--links" href="">Blog</a>
             </li>
