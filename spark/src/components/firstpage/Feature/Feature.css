@@ -30,6 +30,11 @@
     
 }
 
+.feature__figure > svg{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
 .feature__figure img{
     height: 50%;
     object-fit: contain;

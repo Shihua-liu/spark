@@ -5,7 +5,7 @@ class Cards extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-           text: ["Retour", "10% Korting", "Geen verzend kosten", "Altijd opzegbaar"],
+           text: [ "Geen verzend kosten", "Altijd opzegbaar", ],
         }
     }
     

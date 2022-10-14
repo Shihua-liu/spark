@@ -9,7 +9,7 @@ const Feature = (props) => {
 
             <section className="feature">
                 <figure className="feature__figure">
-                    {props.iconimage}
+                    {props.iconimage} 
                 </figure>
                 <h2 className="feature__head">
                     {props.head}

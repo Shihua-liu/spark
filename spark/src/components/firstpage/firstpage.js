@@ -22,7 +22,7 @@ const firstpage = () => {
             <BigPicture />
             <AboutPart />
             <Sectionfirst BigTitleSection="Features">
-                <Feature iconimage={<TbTruckReturn />} head="Cash Back" text={<p>Niet blij? <br></br>krijg je geld terug</p>}/>
+                <Feature iconimage={<TbTruckReturn  />} head="Cash Back" text={<p>Niet blij? <br></br>krijg je geld terug</p>}/>
                 <Feature iconimage={<BiSupport />} head="Support" text={ <p>Hulp nodig? <br></br>Neem contact op <br /> met onze 24/7 service</p>}/>
                 <Feature iconimage={<MdHighQuality />} head="Hoge Kwaliteit" text={<p>Wij maken gebruiken <br /> het beste kwaliteit dat er is</p>}/>
             </Sectionfirst>
