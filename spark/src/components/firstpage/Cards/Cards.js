@@ -1,50 +1,55 @@
 import "./Cards.css"
 import { FiCheckSquare } from "react-icons/fi"
 import React from "react"
-class Cards extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-           text: [ "Geen verzend kosten", "Altijd opzegbaar", ],
-        }
-    }
+
+const Cards = (props) => {
+
     
 
-    render() {
 
-        let texts = this.state.text.map(text =>  {
-            return( 
-            <section className="card__div">
-                <FiCheckSquare className="checks__icons" size="2rem" color="#48001e" />
-                <p>{text}</p>
-            </section>
-        )});
-
-
+    let Cards = props.CardsHeaderEnButton.CardsHeaderEnButton.map((inhoud) => {
         return (
-            
-                <article className="card">
-                    <section className="card__section">
-                        <h2 className="card__head">
+            <article className="card" key={inhoud.id}>
+                <div className="card__section">
+                    <h2 className="card__header">{inhoud.Header}</h2>
+                    <>
+                        {inhoud.text &&
+                        <>
+                            {
+                                (() => {
+                                    const arr = [];
+                                    for (let i = 0; i < inhoud.text.length; i++) {
+                                        arr.push(
+                                            <div className="card__div">
+                                                <FiCheckSquare className="checks__icons" size="2rem" color="#48001e" />
+                                                <p>{inhoud.text[i]}</p>
+                                            </div>
+                                        );
+                                    }
+                                    return arr;
+                                })()
+                            }
+                        </>
+                    }
 
-                            {this.props.head || "naam sieraad"}
-                        </h2>
-                        <section>
-                          {texts}  
-                        </section>
-                        
-                        
-                        <section>
-                            <p>{this.props.prijs || "prijs"}</p>
-                        </section>
-                        <button className="card__button">Probeer 1 maand gratis</button>
-                    </section>
-                </article>
-            
-        );
-    }
+                    </>
+                    
+
+                </div>
+                <button className="card__button">{inhoud.button}</button>
+            </article>
+        )
+    })
 
 
+    return (
+        <>
+            {Cards}
+        </>
+    );
 }
+
+
+
 
 export default Cards;

@@ -6,20 +6,20 @@ const Contact = (props) => {
             
             <h1 className="contact__head">{props.head}</h1>
             
-            <section className="contact__sections">
+            <div className="contact__sections">
                 <h2 className="contact__section--name">Naam</h2>
                 <input type="text" className="contact__section--input" placeholder="naam"/>
-            </section>
+            </div>
             
-            <section className="contact__sections">
+            <div className="contact__sections">
                 <h2 className="contact__section--name">Email</h2>
                 <input type="text" className="contact__section--input" placeholder="email"/>
-            </section>
+            </div>
             
-            <section className="contact__sections">
+            <div className="contact__sections">
                 <h2 className="contact__section--name">Bericht</h2>
                 <textarea type="text" className="contact__section--textarea"/>
-            </section>
+            </div>
             
             <button className="contact__btn">Verzenden</button>
         

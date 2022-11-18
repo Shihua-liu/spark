@@ -1,6 +1,6 @@
 .card{
     min-width: 20rem;
-    height: 60rem;
+    min-height: 20rem;
     border-radius: 2.5rem;
     background: #fff4f2;
     display: flex;
@@ -11,14 +11,24 @@
     margin: 3rem;
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
     z-index: 1;
+    transition: 0.5s all;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 4rem rgba(0,0,0,0.4);
 }
 
 .card__section{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     height: 100%;
+}
+.card__header{
+    font-size: 150%;
+    margin: 2rem;
 }
 
 .card__section--cards{
@@ -55,8 +65,8 @@
 }
 
 .card__button{
-    background-color: #ff5c28;
-    border: #ff5c28 0.3rem solid;
+    background: #ff5c28;
+    border: #ff5c28 0.1rem solid;
     border-radius: 5rem;
     color: #eee;
     cursor: pointer;
@@ -65,14 +75,18 @@
     font-size: 100%;
     display: flex;
     justify-content: end;
-    transition: 0.75s ease-in-out;
+    transition: 0.75s all;
 }
 
 .card__button:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
     color: hsl(0, 0%, 73%);
-    border: hsl(0, 0%, 73%) 0.3rem solid;
-    
+    /* border: hsl(0, 0%, 73%) 0.3rem solid; */
+    box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.4);
+}
+
+.card__button:active{
+    background: #f74104;
 }
 
 @media screen and (max-width:62.5rem) {

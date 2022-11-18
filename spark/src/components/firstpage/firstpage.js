@@ -7,6 +7,8 @@ import Sectionfirst from "./Sectionfirst/Section"
 import Sectionsecond from "./Sectionsecond/Section"
 import Cardtext from "./Cards/Cards-text"
 import Cards from "./Cards/Cards"
+import CardsHeaderEnButton from "./Cards/CardsHeaderEnButton"
+import CardsInfo from "./Cards/CardsInfo";
 import Contact from "./contact/contact"
 
 import { BiSupport } from "react-icons/bi"
@@ -16,6 +18,7 @@ import { MdHighQuality } from "react-icons/md"
 
 
 const firstpage = () => {
+
     return (
         <>
             <Checks />
@@ -29,9 +32,8 @@ const firstpage = () => {
             <Sectionsecond BigTitleSection="Prices">
                 <Cardtext />
                 <section className="card__section--cards">
-                    <Cards head="Word lid!" prijs="€9,95 per maand" />
+                    <Cards CardsHeaderEnButton={CardsHeaderEnButton} CardsInfo={CardsInfo} />
                 </section>
-
             </Sectionsecond>
             <Contact head="Contact" />
         </>

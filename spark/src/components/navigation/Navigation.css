@@ -65,7 +65,7 @@ i{
     }
 
 
-    .NavBar ul{
+    .NavBar {
         height: auto;
         gap: 2rem;
         padding: 2rem;
