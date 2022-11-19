@@ -3,7 +3,7 @@
     width: 100vw;
     height: 100vh;
     font-size: 200%;
-    padding: 20rem;
+    padding: 10rem;
 }
 
 .login__header{
@@ -18,7 +18,7 @@
 
 .bigPicture__image{
     object-fit: contain;
-    width: 100%;
+    width: 75%;
     height: 100%;
 }
 
@@ -34,7 +34,42 @@ form{
 
 }
 
-form > input{
-    height: 10vh;
-    width: 50%;
+.form__deel{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+form > div > input{
+    background-color: #ffccc2;
+    border-radius: 4px;
+    display: block;
+    padding: 1.6rem 2.4rem;
+    width: 20rem;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+.form__btn{
+    background-color: #ffccc2;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    padding: 1rem 2rem;
+    width: 15rem;
+    color: #48001e;
+    font-size: 120%;
+    border: 1px solid #ccc;
+    margin: 2rem;
+}
+
+@media screen and (max-width:63.5rem){
+.form__wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+    .bigPicture__image{
+        display: none;
+    }
 }
