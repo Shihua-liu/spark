@@ -1,5 +1,5 @@
 .loginform{
-    background-color: #ff5c28;
+    background-color: #fc7d52;
     width: 100vw;
     height: 100vh;
     font-size: 200%;
@@ -10,13 +10,13 @@
     margin: 2rem;
 }
 
-.bigPicture{
+.Picture{
     width: 70%;
     object-fit: contain;
     height: 100%;
 }
 
-.bigPicture__image{
+.Picture__image{
     object-fit: contain;
     width: 75%;
     height: 100%;
@@ -51,17 +51,24 @@ form > div > input{
 }
 
 .form__btn{
-    background-color: #ffccc2;
-    border-radius: 4px;
+    background-color: #ff5c28;
+    border: none;
+    border-radius: 5rem;
+    color: #eee;
     cursor: pointer;
-    display: block;
-    padding: 1rem 2rem;
-    width: 15rem;
-    color: #48001e;
+    padding: 0.5rem 2rem;
+    margin: 4rem 0rem;
     font-size: 120%;
-    border: 1px solid #ccc;
-    margin: 2rem;
+    transition: 0.75s ease-in-out;
 }
+
+.form__btn:hover{
+    background-color: hsl(15, 100%, 48%);
+    color: hsl(0, 0%, 73%);
+    border: hsl(0, 0%, 73%) 0.3rem solid;
+    transform: scale(1.05);
+}
+
 
 @media screen and (max-width:63.5rem){
 .form__wrapper{

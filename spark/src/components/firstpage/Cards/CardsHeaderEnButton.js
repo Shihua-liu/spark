@@ -1,23 +1,23 @@
 const CardsHeaderEnButton =
     [
         {
-            "Header": "header1",
-            "button": "1",
-            "text": ["1","2","3"],
+            "Header": "Unlimited",
+            "button": "Probeer 1 maand gratis",
+            "text": ["volgende dag in huis","cash back in 3 dagen","exclusieve deals"],
             "type": "none",
             "id": 1
         },
         {
-            "Header": "header2",
-            "button": "2",
-            "text": ["1","2","3", "4"],
+            "Header": "Familie",
+            "button": "Probeer 1 maand gratis",
+            "text": ["volgende dag in huis","cash back in 3 dagen","exclusieve deals", "delen met familie"],
             "type": "special",
             "id": 2
         },
         {
-            "Header": "header3",
-            "button": "3",
-            "text": ["1","2"],
+            "Header": "Student",
+            "button": "Probeer 1 maand gratis",
+            "text": ["korting op producten"],
             "type": "none",
             "id": 3
         }

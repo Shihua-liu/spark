@@ -8,7 +8,6 @@ import Sectionsecond from "./Sectionsecond/Section"
 import Cardtext from "./Cards/Cards-text"
 import Cards from "./Cards/Cards"
 import CardsHeaderEnButton from "./Cards/CardsHeaderEnButton"
-import CardsInfo from "./Cards/CardsInfo";
 import Contact from "./contact/contact"
 
 import { BiSupport } from "react-icons/bi"
@@ -32,7 +31,7 @@ const firstpage = () => {
             <Sectionsecond BigTitleSection="Prices">
                 <Cardtext />
                 <section className="card__section--cards">
-                    <Cards CardsHeaderEnButton={CardsHeaderEnButton} CardsInfo={CardsInfo} />
+                    <Cards CardsHeaderEnButton={CardsHeaderEnButton} />
                 </section>
             </Sectionsecond>
             <Contact head="Contact" />
