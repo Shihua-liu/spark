@@ -4,7 +4,7 @@ import App from './App/App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Homepage from "./pages/Homepage"
 import Login from "./components/Login/Login"
-import Collection from './components/collection/collection';
+import Collection from './components/Collection/Collection';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <Login />
   },
   {
-    path: "/collection",
+    path: "/Collection",
     element: <Collection hallo="hallo" />,
 },
 ])

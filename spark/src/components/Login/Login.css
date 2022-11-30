@@ -1,47 +1,47 @@
-.loginform{
-    background-color: #fc7d52;
+.loginform {
+    background-color: #ffccc2;
     width: 100vw;
     height: 100vh;
     font-size: 200%;
     padding: 10rem;
 }
 
-.login__header{
+.login__header {
     margin: 2rem;
 }
 
-.Picture{
+.Picture {
     width: 70%;
     object-fit: contain;
     height: 100%;
 }
 
-.Picture__image{
+.Picture__image {
     object-fit: contain;
     width: 75%;
     height: 100%;
 }
 
-.form__wrapper{
+.form__wrapper {
     display: flex;
     flex-direction: row;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
-}
-
-.form__deel{
-    display: flex;
-    flex-direction: column;
     padding: 2rem;
 }
 
-form > div > input{
-    background-color: #ffccc2;
+.form__deel {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form>div>input {
+    background-color: #eee;
     border-radius: 4px;
     display: block;
     padding: 1.6rem 2.4rem;
@@ -50,7 +50,7 @@ form > div > input{
     border: 1px solid #ccc;
 }
 
-.form__btn{
+.form__btn {
     background-color: #ff5c28;
     border: none;
     border-radius: 5rem;
@@ -59,10 +59,10 @@ form > div > input{
     padding: 0.5rem 2rem;
     margin: 4rem 0rem;
     font-size: 120%;
-    transition: 0.75s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
-.form__btn:hover{
+.form__btn:hover {
     background-color: hsl(15, 100%, 48%);
     color: hsl(0, 0%, 73%);
     border: hsl(0, 0%, 73%) 0.3rem solid;
@@ -70,13 +70,13 @@ form > div > input{
 }
 
 
-@media screen and (max-width:63.5rem){
-.form__wrapper{
-    display: flex;
-    flex-direction: column-reverse;
-}
+@media screen and (max-width:62.5rem) {
+    .form__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
-    .bigPicture__image{
+    .Picture {
         display: none;
     }
 }

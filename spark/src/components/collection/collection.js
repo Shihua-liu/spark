@@ -1,15 +1,16 @@
-import React from "react"
+import { useState, useEffect } from "react"
 
-class collection extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+const Collection = () => {
+    return (
+        <article className="collection">
+            <section className="collection__info">
+                <h1>hallo</h1>
+            </section>
+            <section className="collection__cards">
 
-    render() { 
-        return ( 
-        <h1>{this.props.hallo}</h1> 
-        );
-    }
+            </section>
+        </article>
+    );
 }
- 
-export default collection;
+
+export default Collection;

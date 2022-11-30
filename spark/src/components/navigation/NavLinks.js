@@ -9,22 +9,22 @@ const NavLinks = () => {
             <i className="fa-solid fa-gem"></i>
 
             <li className="NavBar__list">
-                <a className="NavBar__list--links" href="">over</a>
+                <a className="NavBar__list--links" href="">Over ons</a>
             </li>
 
 
             <li className="NavBar__list">
-                <a className="NavBar__list--links" href="">features</a>
+                <a className="NavBar__list--links" href="">Features</a>
             </li>
             <li className="NavBar__list">
-                <a className="NavBar__list--links" href="">prijs</a>
+                <a className="NavBar__list--links" href="">Prijs</a>
             </li>
             <li className="NavBar__list">
-                <a className="NavBar__list--links" href="">contact</a>
+                <a className="NavBar__list--links" href="">Contact</a>
             </li>
             <Link to="/login">
                 <li className="NavBar__list">
-                    <a className="NavBar__list--links" href="">login</a>
+                    <a className="NavBar__list--links" href="">Login</a>
                 </li>
             </Link>
 

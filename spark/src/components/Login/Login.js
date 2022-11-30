@@ -18,7 +18,7 @@ const Login = () => {
                         <label>Wachtwoord</label>
                         <input type="text" />
                     </div>
-                    <Link to="/collection">
+                    <Link to="/Collection">
                         <button className="form__btn">Login</button>
                     </Link>
 
