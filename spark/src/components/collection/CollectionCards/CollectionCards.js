@@ -10,7 +10,7 @@ const CollectionCard = (props) => {
         props.onButtonClicked();
     }
 
-    let productCardsToBeRendered = props.productCards.CardInfo.map(product => {
+    let productCardsToBeRendered = props.productCards.map(product => {
         if (product.name === "Placeholder") {
             return (
                 <li className="productList__item">

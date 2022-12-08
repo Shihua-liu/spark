@@ -13,7 +13,6 @@ const CollectionInfo = (props) => {
                 <h2 className="informatie__product">Title</h2>
                 <h2 className="informatie__product">Omschrijving</h2>
                 <h2 className="informatie__product">Prijs</h2>
-                <h2 className="informatie__product">Isnfo</h2>
             </div>
         </section>
     );
