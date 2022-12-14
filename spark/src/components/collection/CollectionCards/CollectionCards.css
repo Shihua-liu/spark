@@ -32,6 +32,12 @@
     border: 0.1rem solid #ff5c28;
     border-radius: 2.5rem;
     position: relative;
+    transition: 1s all;
+}
+
+.productList__item--gray:hover{
+    cursor: pointer;
+    filter: grayscale(1);
 }
 
 .productList__img{
@@ -41,6 +47,10 @@
     border-radius: 2.5rem;
     
 }
+
+/* .productList__img:hover{
+    filter: grayscale(100%);
+} */
 
 .productList__imgText{
     position: absolute;

@@ -5,7 +5,6 @@ import AboutPart from "./About/About"
 import Feature from "./Feature/Feature"
 import Sectionfirst from "./Sectionfirst/Section"
 import Sectionsecond from "./Sectionsecond/Section"
-import Cardtext from "./Cards/Cards-text"
 import Cards from "./Cards/Cards"
 import CardsHeaderEnButton from "./Cards/CardsHeaderEnButton"
 import Contact from "./contact/contact"
@@ -29,7 +28,6 @@ const firstpage = () => {
                 <Feature iconimage={<MdHighQuality />} head="Hoge Kwaliteit" text={<p>Wij maken gebruiken <br /> het beste kwaliteit dat er is</p>}/>
             </Sectionfirst>
             <Sectionsecond BigTitleSection="Prices">
-                <Cardtext />
                 <section className="card__section--cards">
                     <Cards CardsHeaderEnButton={CardsHeaderEnButton} />
                 </section>

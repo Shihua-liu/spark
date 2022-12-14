@@ -6,10 +6,7 @@ import Popup from "./Popup/Popup";
 
 import CardInfo from "./CollectionData"
 
-import zilverRing from "./img/Zilver-ring.jpeg";
-import goudKetting from "./img/goud-ketting.webp";
-import dollarKetting from "./img/dollar-necklace.jpg";
-import Ruby from "./img/Ruby.jpg"
+import ChooseImage from "./ChooseImage";
 
 import "./Collection.css"
 
@@ -17,36 +14,18 @@ const Collection = () => {
 
     const [productCards, setproductCards] = useState(CardInfo);
     const [open, setopen] = useState(true)
+    const [edit, setedit] = useState(false)
 
     const addButtonClicked = (nameInput, descInput, priceInput) => {
 
+        let imageFromHelper = ChooseImage(nameInput)
 
-        let toBeAddedImg;
-        switch (nameInput) {
-            case ("Slot Ketting"):
-                toBeAddedImg = goudKetting
-                break;
-            case ("Dollar Ketting"):
-                toBeAddedImg = dollarKetting
-                break;
-            case ("Zilver ring"):
-                toBeAddedImg = zilverRing
-                break;
-            default:
-                toBeAddedImg = Ruby
-                break;
-        }
-
-        console.log(nameInput)
-        console.log(descInput)
-        console.log(priceInput)
-
-        let toBeAdded =
-        {
+        let toBeAdded = {
+            id: productCards.length + 1,
             name: nameInput,
-            // description: descInput,
-            // priceInput: priceInput,
-            img: toBeAddedImg,
+            description: descInput,
+            price: priceInput,
+            img: imageFromHelper,
         }
 
         let shallowCopy = [...productCards]
@@ -57,6 +36,10 @@ const Collection = () => {
         setproductCards(shallowCopy,);
     }
 
+    const onCardClicked = () =>{
+        setopen(!open);
+    }
+
     const onButtonClicked = () => {
         setopen(!open)
     }
@@ -65,7 +48,7 @@ const Collection = () => {
         return (
             <article className="collection">
                 <CollectionInfo />
-                <CollectionCard onButtonClicked={onButtonClicked} productCards={productCards} headerText="Mijn producten" buttonSymbol="+" buttonText="voeg een product toe" />
+                <CollectionCard onCardClicked={onCardClicked} onButtonClicked={onButtonClicked} productCards={productCards} headerText="Mijn producten" buttonSymbol="+" buttonText="voeg een product toe" />
             </article>
         );
     }
@@ -73,7 +56,7 @@ const Collection = () => {
         return (
             <article className="collection">
                 <Popup addButtonClicked={addButtonClicked} />
-                <CollectionCard onButtonClicked={onButtonClicked} productCards={productCards} headerText="Mijn producten" buttonSymbol="+" buttonText="voeg een product toe" />
+                <CollectionCard onCardClicked={onCardClicked} onButtonClicked={onButtonClicked} productCards={productCards} headerText="Mijn producten" buttonSymbol="+" buttonText="voeg een product toe" />
             </article>
         )
     }
