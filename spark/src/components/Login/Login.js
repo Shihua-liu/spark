@@ -4,7 +4,7 @@ import "./Login.css"
 const Login = () => {
     return (
         <div className="loginform">
-            <h1 class="login__header">Login</h1>
+            <h1 className="login__header">Login</h1>
             <div className="form__wrapper">
                 <div className="Picture">
                     <img className="Picture__image" src="/images/rings-background-image.jpg" alt="" />

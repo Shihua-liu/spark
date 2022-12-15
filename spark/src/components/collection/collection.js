@@ -15,6 +15,7 @@ const Collection = () => {
     const [productCards, setproductCards] = useState(CardInfo);
     const [open, setopen] = useState(true)
     const [edit, setedit] = useState(false)
+    const [cardClicked, setcardClicked] = useState({});
 
     const addButtonClicked = (nameInput, descInput, priceInput) => {
 
@@ -36,8 +37,9 @@ const Collection = () => {
         setproductCards(shallowCopy,);
     }
 
-    const onCardClicked = () =>{
+    const onCardClicked = (idFromCard) =>{
         setopen(!open);
+        setcardClicked(productCards[idFromCard - 1])
     }
 
     const onButtonClicked = () => {
@@ -48,15 +50,15 @@ const Collection = () => {
         return (
             <article className="collection">
                 <CollectionInfo />
-                <CollectionCard onCardClicked={onCardClicked} onButtonClicked={onButtonClicked} productCards={productCards} headerText="Mijn producten" buttonSymbol="+" buttonText="voeg een product toe" />
+                <CollectionCard onProductCardClicked={onCardClicked} onButtonClicked={onButtonClicked} productCards={productCards} headerText="Mijn producten" buttonSymbol="+" buttonText="voeg een product toe" />
             </article>
         );
     }
     else {
         return (
             <article className="collection">
-                <Popup addButtonClicked={addButtonClicked} />
-                <CollectionCard onCardClicked={onCardClicked} onButtonClicked={onButtonClicked} productCards={productCards} headerText="Mijn producten" buttonSymbol="+" buttonText="voeg een product toe" />
+                <Popup addButtonClicked={addButtonClicked} cardClicked={cardClicked}/>
+                <CollectionCard onProductCardClicked={onCardClicked} onButtonClicked={onButtonClicked} productCards={productCards} headerText="Mijn producten" buttonSymbol="+" buttonText="voeg een product toe" />
             </article>
         )
     }

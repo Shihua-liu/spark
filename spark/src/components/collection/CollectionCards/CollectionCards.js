@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Placeholder from '../Placeholder/Placeholder';
 import ProductCard from '../ProductCard/ProductCard';
 
 import "./CollectionCards.css"
@@ -10,23 +11,20 @@ const CollectionCard = (props) => {
     }
 
     let onCardClicked = (idFromCard) => {
-        console.log("clicked!" + idFromCard)
+        props.onProductCardClicked(idFromCard)
     }
 
     let productCardsToBeRendered = props.productCards.map(product => {
         if (product.name === "Placeholder") {
 
             return (
-                <li key={product.id} className="productList__item" >
-                    <button onClick={addProduct} className="productList__button">{props.buttonSymbol || "*"}</button>
-                    <p className="productList__text">{props.buttonText || "Toevoegen"} </p>
-                </li>
+                <Placeholder cardClicked={addProduct} onCardClicked={onCardClicked} id={product.id} buttonSymbol={props.buttonSymbol} buttonText={props.buttonText}/>
             )
 
         }
-
         return(
-            <ProductCard onCardClicked={onCardClicked} key={product.id} id={product.id} name={product.name} productImg={product.img}/>
+        
+            <ProductCard onCardClicked={onCardClicked} key={product.id} id={product.id} name={product.name} description={product.description} price={product.price}productImg={product.img}/>
         )
     })
 

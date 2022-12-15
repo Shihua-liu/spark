@@ -8,11 +8,14 @@ const CardInfo = [
     {
         id: 1,
         name: "Placeholder",
+        
 
     },
     {
         id: 2,
         name: "Ring",
+        description: "test description",
+        price: "1111",
         img: zilverRing
 
     },

@@ -1,17 +1,29 @@
-.contact{
+.form-contact{
     min-height: 55vh;
     font-size: 250%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: white;
+    background: #fff4f2;
     z-index: 99;
-    margin: 2rem;
+}
+
+.contact{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffeae6;
+    margin: 4rem;
+    padding: 2rem;
+    border-radius: 5rem;
 }
 
 .contact__head{
     margin: 2rem;
+    text-align: center;
 }
 
 .contact__sections{

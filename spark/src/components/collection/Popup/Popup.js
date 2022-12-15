@@ -6,10 +6,12 @@ import "../CollectionInfo/CollectionInfo.css"
 import "../CollectionCards/CollectionCards.css"
 
 const Popup = (props) => {
-
+    console.log(props.cardClicked)
     const [nameInput, setnameInput] = useState("")
     const [descInput, setdescInput] = useState("")
     const [priceInput, setpriceInput] = useState("")
+
+
 
 
     const eventNameInput = (event) => {
@@ -24,9 +26,12 @@ const Popup = (props) => {
         setpriceInput(event.target.value)
     }
 
-    // console.log(nameInput)
-    // console.log(descInput)
-    // console.log(priceInput)
+    useEffect(() => {
+        setnameInput(props.cardClicked.name)
+        setdescInput(props.cardClicked.description)
+        setpriceInput(props.cardClicked.price)
+    }, []);
+
 
     const updateProducts = () => {
         if (nameInput !== "") {
