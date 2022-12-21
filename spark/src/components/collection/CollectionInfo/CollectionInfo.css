@@ -1,0 +1,21 @@
+.collection__info{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    height: 10%;
+}
+
+.informatie{
+    height: 90%;
+}
+
+.informatie__Img{
+    width: 75%;
+    object-fit: contain;
+}
+
+.informatie__product{
+
+}

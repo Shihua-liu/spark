@@ -1,8 +1,10 @@
+import { Form } from "react-router-dom"
 import "./contact.css"
 
 const Contact = (props) => {
     return ( 
-        <section className="contact">
+        <form className="form-contact">
+            <section className="contact">
             
             <h1 className="contact__head">{props.head}</h1>
             
@@ -24,6 +26,8 @@ const Contact = (props) => {
             <button className="contact__btn">Verzenden</button>
         
         </section>
+        </form>
+        
         );
 }
  

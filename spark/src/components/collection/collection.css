@@ -1,6 +1,18 @@
 .collection{
-    min-width: 100vw;
+    min-width: 100%;
     min-height: 100vh;
     background: #ffccc5;
-    font-size: 150%;
+    font-size: 200%;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 2rem;
+}
+
+.collection__info{
+    width: 50%;
+}
+
+.collection__card{
+    width: 50%;
 }

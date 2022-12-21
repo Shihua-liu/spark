@@ -1,3 +1,4 @@
+
 .card{
     min-width: 20rem;
     min-height: 20rem;
@@ -12,16 +13,21 @@
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
     z-index: 1;
     transition: 0.5s all;
+    
 }
 
 .card__special{
-    background: #ffebe4;
+    border: 0.3rem solid #48001e;
+    box-shadow: 0 0 2rem #48001e;
+    position: relative;
+    
 }
 
 .card:hover{
     transform: scale(1.05);
     box-shadow: 0 0 4rem rgba(0,0,0,0.4);
 }
+
 
 .card__section{
     display: flex;
