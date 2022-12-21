@@ -22,11 +22,15 @@ const CardInfo = [
     {
         id: 3,
         name: "Ketting",
+        description: "test description",
+        price: "1111",
         img: goudKetting
     },
     {
         id: 4,
         name: "Ketting",
+        description: "test description",
+        price: "1111",
         img: dollarKetting
     },
 ]

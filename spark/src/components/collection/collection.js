@@ -17,6 +17,7 @@ const Collection = () => {
     const [edit, setedit] = useState(false)
     const [cardClicked, setcardClicked] = useState({});
 
+
     const addButtonClicked = (nameInput, descInput, priceInput) => {
 
         let imageFromHelper = ChooseImage(nameInput)
@@ -35,9 +36,32 @@ const Collection = () => {
 
         setopen(!open);
         setproductCards(shallowCopy,);
+
     }
 
-    const onCardClicked = (idFromCard) =>{
+    const editButtonClicked = (nameInput, descInput, priceInput) => {
+        let productCard = productCards
+
+        let newState = productCard.map(product => {
+            if (cardClicked.id === product.id) {
+                product.name = nameInput
+                product.description = descInput
+                product.price = priceInput
+                return product
+            } 
+            return product
+        });
+        setproductCards(newState)
+        setopen(true)
+    }
+
+    const onCardClicked = (idFromCard) => {
+        if (productCards[idFromCard - 1].name === "Placeholder") {
+            setedit(false);
+        }
+        else {
+            setedit(true);
+        }
         setopen(!open);
         setcardClicked(productCards[idFromCard - 1])
     }
@@ -49,7 +73,6 @@ const Collection = () => {
     if (open === true) {
         return (
             <article className="collection">
-                <CollectionInfo />
                 <CollectionCard onProductCardClicked={onCardClicked} onButtonClicked={onButtonClicked} productCards={productCards} headerText="Mijn producten" buttonSymbol="+" buttonText="voeg een product toe" />
             </article>
         );
@@ -57,7 +80,7 @@ const Collection = () => {
     else {
         return (
             <article className="collection">
-                <Popup addButtonClicked={addButtonClicked} cardClicked={cardClicked}/>
+                <Popup editButtonClicked={editButtonClicked} edit={edit} addButtonClicked={addButtonClicked} cardClicked={cardClicked} />
                 <CollectionCard onProductCardClicked={onCardClicked} onButtonClicked={onButtonClicked} productCards={productCards} headerText="Mijn producten" buttonSymbol="+" buttonText="voeg een product toe" />
             </article>
         )

@@ -18,7 +18,7 @@ const CollectionCard = (props) => {
         if (product.name === "Placeholder") {
 
             return (
-                <Placeholder cardClicked={addProduct} onCardClicked={onCardClicked} id={product.id} buttonSymbol={props.buttonSymbol} buttonText={props.buttonText}/>
+                <Placeholder cardClicked={addProduct} onCardClicked={onCardClicked} key={product.id} id={product.id} buttonSymbol={props.buttonSymbol} buttonText={props.buttonText}/>
             )
 
         }

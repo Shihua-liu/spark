@@ -6,13 +6,10 @@ import "../CollectionInfo/CollectionInfo.css"
 import "../CollectionCards/CollectionCards.css"
 
 const Popup = (props) => {
-    console.log(props.cardClicked)
+
     const [nameInput, setnameInput] = useState("")
     const [descInput, setdescInput] = useState("")
     const [priceInput, setpriceInput] = useState("")
-
-
-
 
     const eventNameInput = (event) => {
         setnameInput(event.target.value)
@@ -33,11 +30,19 @@ const Popup = (props) => {
     }, []);
 
 
-    const updateProducts = () => {
+    const addProducts = () => {
         if (nameInput !== "") {
             props.addButtonClicked(nameInput, descInput, priceInput)
         }
+    }
 
+    const editProducts = () => {
+        props.editButtonClicked(nameInput, descInput, priceInput)
+    }
+
+    let button = <button onClick={addProducts} className="popup__button">Voeg toe</button>
+    if (props.edit === true) {
+        button = <button onClick={editProducts} className="popup__button">edit</button>
     }
 
     return (
@@ -62,7 +67,7 @@ const Popup = (props) => {
                 </div>
 
             </div>
-            <button onClick={updateProducts} className="popup__button">Voeg toe</button>
+           {button}
         </article>
     );
 }
